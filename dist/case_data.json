@@ -1,0 +1,86 @@
+{
+  "baselineYear": 2025,
+  "baselineMeasure": "USDA ERS fresh avocado import tonnes by recorded origin and calendar month",
+  "baselineSource": "https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/trade-and-prices-by-category-and-commodity",
+  "baseline": {
+    "2": {
+      "worldTonnes": 93900.7,
+      "mexicoTonnes": 77542.7,
+      "otherTonnes": 16358.0
+    },
+    "7": {
+      "worldTonnes": 108089.69,
+      "mexicoTonnes": 71446.29,
+      "otherTonnes": 36643.4
+    }
+  },
+  "presets": [
+    {
+      "id": "inspection",
+      "label": "One-week inspection pause",
+      "month": 2,
+      "weeks": 1,
+      "mexicoAvailabilityPct": 0,
+      "otherFlexPct": 10,
+      "bufferDays": 3,
+      "result": {
+        "baselineWeeklyTonnes": 23475.17,
+        "lostMexicanTonnes": 19385.67,
+        "assumedOtherFlexTonnes": 408.95,
+        "assumedBufferTonnes": 8308.15,
+        "uncoveredTonnes": 10668.58,
+        "uncoveredSharePct": 45.45
+      }
+    },
+    {
+      "id": "crop",
+      "label": "Eight-week winter crop squeeze",
+      "month": 2,
+      "weeks": 8,
+      "mexicoAvailabilityPct": 75,
+      "otherFlexPct": 15,
+      "bufferDays": 3,
+      "result": {
+        "baselineWeeklyTonnes": 23475.17,
+        "lostMexicanTonnes": 38771.35,
+        "assumedOtherFlexTonnes": 4907.4,
+        "assumedBufferTonnes": 8308.15,
+        "uncoveredTonnes": 25555.8,
+        "uncoveredSharePct": 13.61
+      }
+    },
+    {
+      "id": "summer",
+      "label": "Two-week summer interruption",
+      "month": 7,
+      "weeks": 2,
+      "mexicoAvailabilityPct": 0,
+      "otherFlexPct": 20,
+      "bufferDays": 3,
+      "result": {
+        "baselineWeeklyTonnes": 24407.35,
+        "lostMexicanTonnes": 32266.07,
+        "assumedOtherFlexTonnes": 3309.73,
+        "assumedBufferTonnes": 6914.16,
+        "uncoveredTonnes": 22042.18,
+        "uncoveredSharePct": 45.15
+      }
+    }
+  ],
+  "retailAsp": [
+    {
+      "year": 2022,
+      "usdPerFruit": 1.28
+    },
+    {
+      "year": 2023,
+      "usdPerFruit": 1.06
+    },
+    {
+      "year": 2024,
+      "usdPerFruit": 1.19
+    }
+  ],
+  "retailAspMeasure": "Hass Avocado Board/Circana U.S. annual category average selling price, dollars per retail unit; not an advertised price or customs unit value",
+  "retailAspSource": "https://hassavocadoboard.com/wp-content/uploads/Total-U.S.-2024-Q4.pdf"
+}

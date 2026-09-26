@@ -1,0 +1,18 @@
+{
+  "scannerBenchmark": {
+    "year": 2023,
+    "usdPerPound": 2.2624,
+    "measure": "national scanner-data estimate of average retail price"
+  },
+  "weeklyAdvertised": {
+    "reportDate": "2026-09-25",
+    "product": "Hass, conventional, each",
+    "advertisedUsdEach": 0.88,
+    "adCount": 7225,
+    "priorWeekUsdEach": 0.94,
+    "priorWeekAdCount": 3893,
+    "yearAgoUsdEach": 1.05,
+    "yearAgoAdCount": 5696,
+    "measure": "national weighted average weekly advertised price"
+  }
+}

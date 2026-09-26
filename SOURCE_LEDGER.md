@@ -1,0 +1,25 @@
+# Source ledger
+
+Accessed September 26, 2026. Source snapshots are downloaded by `pipeline/download.py`; URLs there are the exact downloadable inputs.
+
+| Source | Publisher | Coverage used | Access / license | Role |
+|---|---|---|---|---|
+| [Crops and livestock products](https://www.fao.org/faostat/en/#data/QCL) | FAO, FAOSTAT | Item 572 avocado production, 2015–2024 | Public bulk data; [FAO statistical database terms](https://www.fao.org/contact-us/terms/db-terms-of-use/), generally CC BY 4.0 | Country and world production |
+| [Detailed trade matrix](https://www.fao.org/faostat/en/#data/TM) | FAO, FAOSTAT | Item 572 reported bilateral exports, 2024 | Public bulk data; FAO database terms, generally CC BY 4.0 | Export relationships and non-U.S. commitments |
+| [Fruit and tree nuts trade data](https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/trade-and-prices-by-category-and-commodity) | USDA ERS | Fresh-avocado monthly U.S. imports, 2017–2025; file updated Sept. 15, 2026 | Public federal data download | U.S. baseline, origin concentration, seasonality, customs unit value |
+| [Fruit and tree nuts yearbook, Table H-1](https://ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables) | USDA ERS | Fresh avocado import share of domestic availability, calendar 2024; updated Feb. 10, 2026 | Public federal data download | U.S. import reliance estimate |
+| [Weekly Grocery Store Specialty Crops Feature Activity](https://www.ams.usda.gov/mnreports/fvwretail.pdf) | USDA AMS | National conventional Hass advertised price, September 25, 2026 report | Public weekly report; URL rolls to newest issue | Retail promotion observation |
+| [Fruit and Vegetable Prices](https://ers.usda.gov/data-products/fruit-and-vegetable-prices) | USDA ERS | 2023 fresh-avocado retail price per pound | Public workbook; based on Circana scanner data | Retail transaction benchmark |
+| [UN Comtrade public API](https://uncomtrade.org/docs/un-comtrade-api/) | UN Statistics Division | U.S.-reported imports, HS 080440, 2024 | Public preview, rate-limited; HS code covers fresh or dried | Annual net-weight cross-check only |
+| [FATUS calendar-year file](https://www.ers.usda.gov/data-products/foreign-agricultural-trade-of-the-united-states-fatus/calendar-year) | USDA ERS | U.S. avocado import value, 2024 | Public federal data download | Annual value cross-check only |
+| [Fruit and Tree Nuts Outlook, March 2025](https://esmis.nal.usda.gov/sites/default/release-files/h989r3203/2n49vz489/k643cx565/FTS-381.pdf) | USDA ERS | 2024 customs-district entry shares | Public federal report | Logistics context only |
+| [Fruit and Tree Nuts Outlook, March 2026](https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/113982/FTS-384.pdf) | USDA ERS | 2025 import landscape, Peru/Colombia timing and markets, California season | Public federal report | Current-market interpretation |
+| [Fruit and Tree Nuts Outlook, March 2022](https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/105859/FTS-374.pdf) | USDA ERS | 2021/22 crop outlook, January shipping-point prices, February inspection suspension | Public federal report | Dated supply and upstream price episode |
+| [Fruit and Tree Nuts Outlook, July 2024](https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/109636/FTS-379.pdf) | USDA ERS | June 2024 inspection pause | Public federal report | Dated disruption context |
+| [2024 Q4 Total U.S. Retail Composite](https://hassavocadoboard.com/wp-content/uploads/Total-U.S.-2024-Q4.pdf) | Hass Avocado Board / Circana | 2022–2024 annual average selling price per unit | Public industry report | Retail transaction price series |
+| [2024 Year in Review](https://hassavocadoboard.com/happenings/2024-year-in-review/) | Hass Avocado Board | 2024 size-mix context | Public industry account | Market interpretation; not causal attribution |
+| [Guatemala Hass import requirements update](https://www.aphis.usda.gov/news/program-update/update-import-requirements-guatemala-fresh-avocado-fruit) | USDA APHIS | April 2025 systems-approach and pest-control workplan | Public federal order update | Market-access context |
+| [Natural Earth countries](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson) | Natural Earth | 1:110m country boundaries | Public domain | Map geometry |
+| [Avocado photograph](https://commons.wikimedia.org/wiki/File:Avocado.jpeg) | USDA via Wikimedia Commons | Product image | U.S. public domain | Editorial image |
+
+FAOSTAT and ERS records do not share a fully equivalent product definition. The website identifies the discrepancy and uses ERS for the U.S. shock baseline. [USDA FAS GATS](https://apps.fas.usda.gov/opendatawebV2/) was investigated but its API requires a user-specific key; no keyed request is part of this reproducible public build. The [Census international trade API](https://api.census.gov/data/timeseries/intltrade.html) also requires a key for current example calls. These sources are not silently merged into the calculation.

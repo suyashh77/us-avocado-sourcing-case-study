@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a1b">
+  <meta name="description" content="A retail sourcing case study on U.S. avocado supply: Mexico concentration, price and production shocks, alternative origins, and transparent short-horizon scenarios.">
+  <title>U.S. Avocado Sourcing Case Study | Supply Chain Atlas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101a1b'/%3E%3Cellipse cx='32' cy='32' rx='19' ry='25' fill='%23a8cf65'/%3E%3Ccircle cx='32' cy='38' r='11' fill='%2357734e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Avocado Supply Chain Atlas home"><span class="brand-mark">A<span>•</span></span><span>AVOCADO<br>SOURCING CASE STUDY</span></a>
+    <span class="edition">CASE NOTE 01 &nbsp;/&nbsp; SEPTEMBER 2026</span>
+    <a class="toplink" href="#sources">SOURCES <span aria-hidden="true">↗</span></a>
+  </header>
+    <nav class="report-nav" aria-label="Case study sections"><a href="#brief">01 Decision</a><a href="#signals">02 Evidence</a><a href="#tabletop">03 Scenario</a><a href="#actions-title">04 Sourcing response</a><a href="#appendix">Data appendix</a></nav>
+
+  <main id="top">
+    <section class="opening command-opening case-opening" aria-labelledby="opening-title">
+      <div class="opening-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SOURCING CASE STUDY / U.S. FRESH AVOCADOS</p>
+        <h1 id="opening-title">What if Mexico's avocado flow stops?</h1>
+        <p class="deck">The sourcing decision: who can deliver the right fruit in the right week?</p>
+        <div class="command-metrics" aria-label="Case study indicators">
+          <div><span>MEXICO SHARE OF IMPORTS · 2025</span><strong id="share-inline">—</strong><small>USDA ERS [2]</small></div>
+          <div><span>WINTER / SPRING MEXICO SHARE · 2024</span><strong id="command-winter">—</strong><small>January–April U.S. imports · USDA ERS [2]</small></div>
+          <div><span>ANNUAL REPLACEMENT GAP · 2024</span><strong id="opening-gap">—</strong><small>extreme assumption, not a shortage forecast [2, 3]</small></div>
+        </div>
+        <div class="opening-actions"><button id="start-story" class="action primary" type="button">Read the decision <span aria-hidden="true">↘</span></button><a class="action text-action" href="#tabletop">Test a disruption <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section id="brief" class="brief" aria-labelledby="brief-title">
+      <div class="brief-head"><p class="eyebrow">01 / DECISION</p><h2 id="brief-title">Keep Mexico. Qualify alternatives by week.</h2></div>
+      <div class="brief-metrics"><div><span>2025 U.S. IMPORT VOLUME</span><strong id="brief-us-2025">—</strong><small>fresh avocados · USDA ERS [2]</small></div><div><span>MEXICO SHARE OF 2025 IMPORTS</span><strong id="brief-mx-2025">—</strong><small>by weight · USDA ERS [2]</small></div><div><span>2024 CURRENT-SUPPLIER CEILING GAP</span><strong id="brief-gap">—</strong><small>even at 100% diversion · conditional [2, 3]</small></div></div>
+      <div class="lane-cards" aria-label="Observed supplier lanes and qualification status">
+        <article><span>CORE LANE · OBSERVED</span><h3>Mexico</h3><strong id="lane-mexico">—</strong><p>2025 U.S. imports · protect continuity.</p><small>UNVERIFIED · Contingency volume</small></article>
+        <article><span>SUMMER OPTION · OBSERVED</span><h3>Peru</h3><strong id="lane-peru">—</strong><p>2025 U.S. imports · peak <b id="lane-peru-window">—</b>.</p><small>UNVERIFIED · Weekly size and free volume</small></article>
+        <article><span>BROADER OPTION · OBSERVED</span><h3>Colombia</h3><strong id="lane-colombia">—</strong><p>2025 U.S. imports · peak <b id="lane-colombia-window">—</b>.</p><small>UNVERIFIED · Contract and grade</small></article>
+      </div>
+      <p class="lane-source">U.S. receipt windows, not free supply · USDA ERS <a href="#sources">[2]</a></p>
+      <div class="brief-takeaway"><span>ANALYST INFERENCE</span><p><strong id="winter-share-note">—</strong> Mexico share in Jan–Apr 2024. Peru peaks in summer; winter needs a separate contingency. <a href="#sources">[2]</a></p></div>
+    </section>
+
+    <section id="signals" class="case-signals" aria-labelledby="signals-title">
+      <div class="report-section-head"><div><p class="eyebrow">02 / EVIDENCE</p><h2 id="signals-title">Follow the volume.</h2></div></div>
+      <div class="trade-figures">
+        <article class="figure-card sankey-card"><span class="metric-label">FIG 01 · REPORTED EXPORT RELATIONSHIPS</span><h3>Alternative fruit already has buyers</h3><div class="sankey-wrap"><svg id="trade-sankey" viewBox="0 0 950 390" role="img" aria-label="Sankey diagram of Peru, Colombia, and Chile's 2024 reported avocado exports to the United States and other trade partners"></svg></div><div id="sankey-readout" class="sankey-readout" aria-live="polite">Select a ribbon to inspect reported tonnes.</div><p>2024 FAOSTAT reporter exports · partner relationships, not routes or free capacity. The Netherlands may re-export. <a href="#sources">[3]</a></p></article>
+        <article class="figure-card pool-card"><span class="metric-label">FIG 02 · OBSERVED EXPORT POOL</span><h3>U.S. vs other buyers</h3><div id="lane-pool" class="lane-pool" role="img" aria-label="Reported 2024 exports by alternative origin to the U.S. and other buyers"></div><div class="pool-legend"><span><i class="pool-us"></i>U.S.</span><span><i class="pool-other"></i>Other buyers</span></div><p>Already traded, not spare capacity · FAOSTAT <a href="#sources">[3]</a></p></article>
+      </div>
+      <div class="signal-layout">
+        <article class="asp-panel figure-card"><span class="metric-label">FIG 03 · RETAIL SELLING PRICE</span><h3>Average per fruit</h3><div id="asp-chart" class="asp-chart" role="img" aria-label="U.S. retail avocado average selling price per fruit in 2022, 2023 and 2024"></div><p>Annual $/unit · HAB/Circana <a href="#sources">[12]</a></p></article>
+        <article class="figure-card"><span class="metric-label">FIG 04 · ORIGIN CONCENTRATION</span><h3>Mexico's share of U.S. imports</h3><div id="case-concentration" class="figure-concentration" role="img" aria-label="Mexico share of U.S. fresh avocado imports, 2017 through 2025"></div><p>Import tonnes · USDA ERS <a href="#sources">[2]</a></p></article>
+        <article class="figure-card"><div class="figure-head"><div><span class="metric-label">FIG 05 · SEASONAL ORIGIN MIX</span><h3>Alternatives arrive unevenly</h3></div><label>YEAR <select id="figure-year" aria-label="Origin mix year"><option>2025</option><option>2024</option></select></label></div><div id="case-origin-mix" class="figure-mix" role="img" aria-label="Monthly U.S. fresh avocado imports by origin"></div><div class="figure-legend"><span><i class="mexico"></i>Mexico</span><span><i class="peru"></i>Peru</span><span><i class="other"></i>Other</span></div><p>Monthly import tonnes · USDA ERS <a href="#sources">[2]</a></p></article>
+        <article class="figure-card"><span class="metric-label">FIG 06 · PRICE AT THE BORDER</span><h3>Customs value, not shelf price</h3><div id="case-import-value" class="figure-value" role="img" aria-label="Annual U.S. fresh avocado customs unit value, 2017 through 2025"></div><p>Annual import $/kg · USDA ERS <a href="#sources">[2]</a></p></article>
+      </div>
+      <details class="evidence-notes"><summary>Price and disruption context <span>2022 · 2024 · 2025/26</span></summary>
+      <div class="episode-head"><span>EVENT ANNOTATIONS</span><span>Descriptive context; no event effect estimated</span></div>
+      <div class="signal-events">
+          <article><span>2022 / CROP + INSPECTION</span><h3>Prices rose before the pause</h3><p>January shipping-point Hass cartons: <strong>$48.94 vs $23.05</strong> a year earlier. Mexico's crop was forecast 8% lower; the inspection pause came February 12–18. <a href="#sources">[11]</a></p></article>
+          <article><span>2024 / SIZE MIX</span><h3>More units, higher retail ASP</h3><p>Retail units rose 4% and annual ASP rose 12% to <strong>$1.19 per fruit</strong>. Large fruit was scarcer; a June inspection pause also occurred. Neither effect is isolated. <a href="#sources">[12–14]</a></p></article>
+          <article><span>2025/26 / RECOVERY</span><h3>Large fruit returned</h3><p>Large-size share rose from 40% to 50% of Mexico's season-to-date U.S. shipments. Mid-March 2026 FOB was near <strong>$1/lb</strong>, about one-third of a year earlier. <a href="#sources">[8]</a></p></article>
+      </div>
+      </details>
+    </section>
+
+    <section id="tabletop" class="tabletop" aria-labelledby="tabletop-title">
+      <div class="report-section-head"><div><p class="eyebrow">03 / SCENARIO</p><h2 id="tabletop-title">How large is the service gap?</h2></div><p>Change assumptions. Results are import-equivalent tonnes. <a href="#methodology">Method ↗</a></p></div>
+      <div class="preset-row" role="group" aria-label="Scenario presets"><button class="preset active" data-preset="inspection" type="button">1-week inspection pause</button><button class="preset" data-preset="crop" type="button">8-week winter crop squeeze</button><button class="preset" data-preset="summer" type="button">2-week summer interruption</button></div>
+      <div class="tabletop-grid">
+        <div class="tabletop-controls">
+          <label class="scenario-select">REFERENCE MONTH <select id="case-month"><option value="2">February 2025</option><option value="7">July 2025</option></select></label>
+          <div class="scenario-input"><label for="case-weeks">Disruption length <output id="case-weeks-out">1 week</output></label><input id="case-weeks" type="range" min="1" max="8" step="1" value="1"></div>
+          <div class="scenario-input"><label for="case-mexico">Mexican flow available <output id="case-mexico-out">0%</output></label><input id="case-mexico" type="range" min="0" max="100" step="5" value="0"></div>
+          <div class="scenario-input"><label for="case-flex">Extra non-Mexico flow <output id="case-flex-out">10%</output></label><input id="case-flex" type="range" min="0" max="50" step="5" value="10"></div>
+          <div class="scenario-input"><label for="case-buffer">Usable buffer <output id="case-buffer-out">3 days</output></label><input id="case-buffer" type="range" min="0" max="7" step="1" value="3"></div>
+          <p class="model-note">Flex and buffer are assumptions, not verified capacity.</p>
+        </div>
+        <div class="tabletop-results" aria-live="polite"><span class="metric-label">CONDITIONAL REPLACEMENT GAP</span><strong id="case-gap">—</strong><span class="result-caveat">SCENARIO · NOT A STORE SHORTAGE FORECAST</span><p><b id="case-gap-pct">—</b> of reference imports. Replace with retailer POS and contracts.</p><div class="scenario-bridge"><div><span>Mexico flow lost</span><b id="case-lost">—</b></div><div><span>Assumed other-origin flex</span><b id="case-flex-tonnes">—</b></div><div><span>Assumed usable buffer</span><b id="case-buffer-tonnes">—</b></div><div><span>Residual gap</span><b id="case-residual">—</b></div></div><p class="model-note" id="case-baseline-note">Loading monthly source baseline…</p></div>
+      </div>
+      <div class="sensitivity-panel"><div><span class="metric-label">FIG 07 · SCENARIO SENSITIVITY</span><h3>Which assumptions close the gap?</h3><p>Gap as a share of baseline imports. Click to set extra flow and buffer.</p></div><div><div id="case-sensitivity" class="case-sensitivity" role="group" aria-label="Scenario sensitivity by alternative flow and buffer days"></div><div class="sensitivity-axis">Extra non-Mexico flow →</div></div></div>
+      <details class="tabletop-explainer"><summary>Model formula and limits</summary><p class="tabletop-method">Lost Mexico flow = observed monthly Mexico tonnes ÷ days in month × 7 × weeks × loss share; subtract assumed extra non-Mexico flow and one-time buffer, floored at zero. An eight-week run repeats the selected month's rate. This is a stress test, not a calendar or price forecast. <a href="#sources">[2]</a></p></details>
+    </section>
+
+    <section class="actions" aria-labelledby="actions-title">
+      <div><p class="eyebrow">04 / SOURCING RESPONSE</p><h2 id="actions-title">What I would do as the buyer.</h2></div>
+      <ol>
+        <li><span>01 / PROTECT</span><p><strong>Protect Mexico.</strong> Confirm crossings, packhouses, and usable inventory. <em>Observed concentration · retailer plan unverified</em></p></li>
+        <li><span>02 / QUALIFY</span><p><strong>Buy seasonal options.</strong> Trial Peru and Colombia by week, size, grade, and pack. <em>Observed timing · capacity unverified</em></p></li>
+        <li><span>03 / TRIGGER</span><p><strong>Adjust promotions before stockouts.</strong> Tie decisions to confirmed receipts and DC inventory. <em>Analyst recommendation · retailer data needed</em></p></li>
+      </ol>
+      <p class="actions-note">Execution needs retailer POS, contracts, inventory, shrink, and SKU costs.</p>
+    </section>
+    <details class="supplier-questions" id="supplier-checklist"><summary><span>SUPPLIER DILIGENCE</span><strong>Six questions before counting replacement supply</strong><em>OPEN ↗</em></summary><div><p class="eyebrow">BEFORE COUNTING REPLACEMENT SUPPLY</p><h2 id="supplier-questions-title">What I would ask a supplier tomorrow.</h2><p>Historic shipments prove a lane existed. These answers determine whether it can cover a specific retail order.</p></div><ol><li>Which weeks and firm tonnes can you commit beyond existing customer contracts?</li><li>Which Hass sizes, grades, ripeness specs, and bag or bulk packs can you supply?</li><li>What are packhouse throughput, cold-chain capacity, lead time, and route variance?</li><li>What U.S. phytosanitary requirements apply to this fruit and origin?</li><li>What is the delivered cost by SKU, including shrink and claims?</li><li>What happens to the commitment if inspection or freight is interrupted?</li></ol><p class="supplier-questions-note">STATUS · UNVERIFIED COMMERCIAL INPUTS. None is inferred from national production or bilateral exports.</p></details>
+
+    <details id="appendix" class="case-appendix"><summary><span>DATA APPENDIX</span><strong>Explore the source data, global context, and methods</strong><em>OPEN ↗</em></summary>
+    <section id="explore" class="explorer" aria-labelledby="explorer-title">
+      <div class="section-head">
+        <div><p class="eyebrow">THE SYSTEM / EXPLORE</p><h2 id="explorer-title">From orchards to market</h2></div>
+        <p class="section-aside">Annual production and trade · Monthly U.S. imports<br><strong>2024</strong> comparison year</p>
+      </div>
+      <div class="workspace">
+        <div class="map-pane">
+          <div class="map-toolbar" role="group" aria-label="Map layer">
+            <button class="layer active" data-layer="production" type="button" aria-pressed="true">01&nbsp; Production</button>
+            <button class="layer" data-layer="trade" type="button" aria-pressed="false">02&nbsp; Trade</button>
+            <button class="layer" data-layer="imports" type="button" aria-pressed="false">03&nbsp; U.S. imports</button><label class="country-filter">FOCUS COUNTRY <select id="country-select" aria-label="Focus country on map"></select></label>
+          </div>
+          <div class="map-wrap"><svg id="world-map" viewBox="0 0 900 430" role="group" aria-label="Map of avocado producing and trading countries; select a country for details"></svg><div class="map-legend" id="map-legend"></div></div>
+          <p class="map-note" id="map-note">Country shading represents production volume. Select a country to inspect it.</p>
+        </div>
+        <aside class="detail-pane" aria-live="polite">
+          <div class="pane-kicker">SELECTED ORIGIN <span>2024 DATA</span></div>
+          <h3 id="detail-country">Mexico</h3>
+          <p class="detail-lede" id="detail-lede">The dominant U.S. supplier.</p>
+          <div class="detail-buying-test"><span>BUYER'S ORIGIN SCREEN</span><strong id="detail-window">—</strong><p id="detail-question">Select an origin to inspect its U.S. lane.</p></div>
+          <div class="detail-stat"><strong id="detail-production">—</strong><span>tonnes grown in 2024 <a href="#sources" aria-label="Production source">[1]</a></span></div>
+          <div class="detail-stat"><strong id="detail-us">—</strong><span>tonnes imported by the U.S. <a href="#sources" aria-label="U.S. import source">[2]</a></span></div>
+          <div class="detail-stat"><strong id="detail-elsewhere">—</strong><span>tonnes exported elsewhere <a href="#sources" aria-label="Trade source">[3]</a></span></div>
+          <div class="detail-timeline"><span>PRODUCTION / 2015–2024</span><div id="detail-trend" class="detail-trend" role="img" aria-label="Selected country production history"></div></div><p class="detail-destinations" id="detail-destinations">Top export destinations loading…</p>
+          <div class="detail-footer"><button id="select-mexico" type="button">Focus Mexico <span aria-hidden="true">↗</span></button><span>SELECT ANY COUNTRY ON MAP</span></div>
+        </aside>
+      </div>
+      <div class="bottom-band"><span>01 / THE DEPENDENCY</span><p><strong id="mx-share">—</strong> of U.S. imports came from Mexico. Its supply was about <strong id="ratio">—</strong> times the shipments from every other origin combined.</p></div>
+    </section>
+
+    <section id="global-desk" class="global-desk" aria-labelledby="global-desk-title">
+      <div class="report-section-head"><div><p class="eyebrow">GLOBAL DESK / 2024 OBSERVED DATA</p><h2 id="global-desk-title">The world market at a glance.</h2></div><p>Production is where fruit was grown. Trade rows are exporter-reported bilateral sales, including possible re-exports. They are relationships between countries, not shipment routes or uncommitted supply. <a href="#sources">[1, 3]</a></p></div>
+      <div class="global-stats"><div><span>WORLD HARVEST · 2024</span><strong id="global-output">—</strong><small>metric tonnes</small></div><div><span>CHANGE SINCE 2015</span><strong id="global-growth">—</strong><small>world production</small></div><div><span>REPORTING PRODUCERS</span><strong id="global-producers">—</strong><small>with a 2024 observation</small></div><div><span>MEXICO'S WORLD SHARE</span><strong id="global-mexico">—</strong><small>2024 production</small></div></div>
+      <div class="global-panels">
+        <article class="global-panel"><div class="panel-head"><span>01 / WORLD OUTPUT</span><h3>A decade of growth</h3><p>FAOSTAT avocado production, 2015–2024. Hover or focus a year for its reported total.</p></div><div id="world-trend" class="world-trend" role="img" aria-label="World avocado production, 2015 to 2024"></div><p class="global-foot">Metric tonnes; all avocado varieties. <a href="#sources">[1]</a></p></article>
+        <article class="global-panel"><div class="panel-head"><span>02 / TRADE RELATIONSHIPS</span><h3>The busiest reported lanes</h3><p>Largest 2024 exporter-to-partner records in the FAOSTAT snapshot.</p></div><div id="global-lanes" class="global-list"></div><p class="global-foot">Reported partner flows, not physical routes; transit and re-export may be involved. <a href="#sources">[3]</a></p></article>
+        <article class="global-panel"><div class="panel-head"><span>03 / BUYER MARKETS</span><h3>Where exports are reported</h3><p>Top destinations summed across exporter-reported partner rows, 2024.</p></div><div id="global-destinations" class="global-list"></div><p class="global-foot">These totals are not final consumption. The Netherlands, for example, also reports avocado exports. <a href="#sources">[3]</a></p></article>
+      </div>
+    </section>
+
+    <section class="evidence-grid" aria-label="Production and imports evidence">
+      <article class="evidence-card">
+        <div class="card-top"><span>02 / PRODUCTION</span><a href="#sources">FAOSTAT ↗</a></div>
+        <h2>Growing avocados does not make a country a substitute.</h2>
+        <p>Output includes domestic use and fruit already committed to other markets. The largest growers are not necessarily the largest suppliers to the U.S.</p>
+        <div id="production-ranking" class="ranking" aria-label="Top avocado producing countries in 2024"></div>
+        <p class="fineprint">FAOSTAT production, tonnes, 2024. Countries only; world total includes smaller producers.</p>
+      </article>
+      <article class="evidence-card">
+        <div class="card-top"><span>03 / TIMING</span><a href="#sources">USDA ERS ↗</a></div>
+        <h2>Alternative origins arrive on a different calendar.</h2>
+        <p>Monthly shipments reveal where a supplier is already active. Historical timing is evidence of market presence, not a guarantee of spare capacity.</p>
+        <div class="season-head"><span>MONTHLY U.S. IMPORTS</span><label for="season-year">YEAR <select id="season-year" aria-label="Seasonality year"><option>2025</option><option selected>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option></select></label></div>
+        <div id="seasonality" class="seasonality" role="img" aria-label="Monthly U.S. avocado imports by origin in 2024"></div>
+        <div class="season-legend"><span><i class="swatch mexico"></i> Mexico</span><span><i class="swatch peru"></i> Peru</span><span><i class="swatch other"></i> Other</span></div>
+        <p class="fineprint">USDA ERS fresh-avocado import volume. Calendar months of selected year.</p>
+      </article>
+    </section>
+
+    <section class="analyst" aria-labelledby="analyst-title">
+      <div class="analyst-heading"><div><p class="eyebrow">THE ANALYST'S READ / THREE TESTS</p><h2 id="analyst-title">How exposed is the system?</h2></div><p>Each measure answers a different question. Keep the denominator and the year in view.</p></div>
+      <div class="analyst-grid">
+        <article class="analyst-card"><span class="metric-label">01 / IMPORT RELIANCE</span><strong id="availability-share" class="metric-number">—</strong><h3>of U.S. fresh-avocado availability came from imports in 2024.</h3><p>USDA ERS yearbook estimate. This is a share of domestic availability; the Mexico share above is a share of imports. <a href="#sources">[5]</a></p></article>
+        <article class="analyst-card"><span class="metric-label">02 / ORIGIN CONCENTRATION</span><strong id="latest-mexico-share" class="metric-number">—</strong><h3>of 2025 U.S. fresh-avocado imports came from Mexico.</h3><p>Compare annual origin shares, 2017–2025. The 2024 scenario remains fixed to the latest common year with the FAOSTAT trade matrix. <a href="#sources">[2]</a></p><div id="concentration-trend" class="trend-chart" role="img" aria-label="Mexico share of U.S. fresh avocado imports, 2017 to 2025"></div></article>
+        <article class="analyst-card analyst-card-wide"><span class="metric-label">03 / CALENDAR EXPOSURE</span><h3>Risk is highest when alternative lanes are thinnest.</h3><p id="calendar-read">Loading monthly comparison…</p><div id="monthly-risk" class="monthly-risk" role="img" aria-label="Mexico share of U.S. fresh avocado imports by month in 2024"></div><p class="chart-note">U.S. imports by recorded origin and calendar month, 2024. Shares are observed; bars do not represent spare capacity. <a href="#sources">[2]</a></p></article>
+      </div>
+    </section>
+
+    <section id="alternatives" class="alternatives" aria-labelledby="alternatives-title">
+      <div class="report-section-head"><div><p class="eyebrow">SUPPLIER OPTIONS / OBSERVED FLOWS</p><h2 id="alternatives-title">Which alternatives can help—and when?</h2></div><p>These are sourcing candidates, not a ranked capacity forecast. U.S. lane sizes come from 2025 imports; non-U.S. export volumes and destinations use 2024 reporter data. <a href="#sources">[2, 3]</a></p></div>
+      <div id="origin-profiles" class="origin-profiles" aria-label="Alternative supplier profiles"></div>
+      <div class="option-lanes"><article><span>DOMESTIC BUFFER</span><h3>California</h3><p>Domestic shipments rise in spring and peak in summer, according to USDA ERS. They can complement summer imports, but are not part of this import-reallocation model. <a href="#sources">[8]</a></p></article><article><span>DEVELOPMENT PATH</span><h3>Guatemala</h3><p>APHIS updated the systems-approach requirements for Hass avocados in 2025, including a joint operational workplan and pest controls. ERS records no U.S. import flow in this snapshot for 2024–25; this is a qualification prospect, not modeled replacement volume. <a href="#sources">[9]</a></p></article></div>
+      <p class="section-footnote">Peak three-month windows are descriptive shares of each origin’s 2025 U.S. shipments. A destination such as the Netherlands is the reported trade partner, not necessarily the final consumer or physical route. The Dominican Republic’s U.S. supply is predominantly non-Hass, so product fit requires separate assessment. <a href="#sources">[8]</a></p>
+    </section>
+
+    <section class="retail" id="retail" aria-labelledby="retail-title">
+      <div class="retail-heading"><p class="eyebrow">AT THE RETAIL EDGE / PRICE EVIDENCE</p><h2 id="retail-title">What shoppers see—and what they pay.</h2><p>Retail prices sit downstream of import costs. These two USDA measures capture different parts of that market and use different units.</p></div>
+      <div class="retail-grid">
+        <article class="retail-feature"><span class="metric-label">WEEKLY ADVERTISED PRICE · CONVENTIONAL HASS · EACH</span><strong class="retail-value" id="retail-ad-price">—</strong><p id="retail-ad-date">National grocery-store promotions · report loading</p><div id="retail-ad-comparison" class="retail-ad-comparison"></div><p class="retail-note" id="retail-ad-note">Advertised prices are promotional offers, not transaction-weighted checkout averages. <a href="#sources">[6]</a></p></article>
+        <article class="retail-feature scanner"><span class="metric-label">SCANNER-DATA RETAIL ESTIMATE · 2023 · PER POUND</span><strong class="retail-value" id="retail-scanner-price">—</strong><p>USDA ERS estimate of the average price paid for fresh avocados in 2023, based on Circana retail scanner data. <a href="#sources">[7]</a></p><div class="retail-rule"></div><h3>Two lenses, two units.</h3><p>One is a weekly advertised price per fruit; the other is an annual transaction-based estimate per pound. The Atlas does not subtract them or feed either into its import-cost scenario.</p></article>
+      </div>
+    </section>
+
+    <section class="format-shift" id="format-shift" aria-labelledby="format-title">
+      <div class="report-section-head"><div><p class="eyebrow">RETAIL FORMAT / THE HIDDEN CAPACITY TEST</p><h2 id="format-title">The fruit must fit the shelf.</h2></div><p>A sourcing plan must specify pack format and fruit size as well as origin. The Hass Avocado Board's Circana analysis shows why this matters. <a href="#sources">[10]</a></p></div>
+      <div class="format-grid">
+        <div class="format-chart"><div class="format-chart-top"><span>U.S. RETAIL AVOCADO UNITS</span><span>BAGGED SHARE · 2019–2022</span></div>
+          <div class="format-row"><span>2019</span><div class="format-track" role="img" aria-label="2019: 19.0 percent bagged, 81.0 percent bulk"><i style="width:19%"></i></div><strong>19.0%</strong></div>
+          <div class="format-row"><span>2020</span><div class="format-track" role="img" aria-label="2020: 22.9 percent bagged, 77.1 percent bulk"><i style="width:22.9%"></i></div><strong>22.9%</strong></div>
+          <div class="format-row"><span>2021</span><div class="format-track" role="img" aria-label="2021: 28.4 percent bagged, 71.6 percent bulk"><i style="width:28.4%"></i></div><strong>28.4%</strong></div>
+          <div class="format-row"><span>2022</span><div class="format-track" role="img" aria-label="2022: 28.4 percent bagged, 71.6 percent bulk"><i style="width:28.4%"></i></div><strong>28.4%</strong></div>
+          <div class="format-legend"><span><i class="bag-key"></i>Bagged fruit</span><span><i class="bulk-key"></i>Bulk fruit</span></div>
+          <p class="format-footnote">Circana multi-outlet scanner sales reported by HAB. Share is measured in individual avocado units, including fruit inside bags—not the number of bags. Calendar years 2019–2022; historical context, not a 2026 market-share estimate. <a href="#sources">[10]</a></p>
+        </div>
+        <div class="format-read"><span class="metric-label">THE 2022 FORMAT SIGNAL</span><strong>+9.4<span> points</span></strong><p>Bagged fruit's share rose from 19.0% in 2019 to 28.4% in 2022. Small 4- and 5-count bags generated 54% of bagged avocado dollar sales in 2022. <a href="#sources">[10]</a></p><div><b>BUYER'S TEST</b><p>Ask prospective suppliers for packhouse throughput by bag count and fruit size, packaging materials, ripening specifications, and delivered cost by SKU. Tonnes alone cannot confirm a retail-ready replacement.</p></div></div>
+      </div>
+    </section>
+
+    <section id="shock" class="shock" aria-labelledby="shock-title">
+      <div class="shock-intro"><p class="eyebrow">04 / DISRUPTION TEST</p><h2 id="shock-title">Remove Mexico.<br><em>What can move instead?</em></h2><p>Start with the volume the U.S. imported from Mexico in 2024. Then ask how much of other suppliers’ exports to non-U.S. markets might be redirected. This is a one-year allocation thought experiment, not a forecast.</p></div>
+      <div class="shock-grid">
+        <div class="scenario-controls">
+          <div class="shock-status"><span class="status-label">MEXICO → U.S.</span><button id="shock-toggle" class="shock-button" type="button" aria-pressed="false">Set to 0% <span aria-hidden="true">✕</span></button></div>
+          <div class="control-block"><label for="diversion">Share of other suppliers’ non-U.S. exports redirected</label><div class="range-row"><input id="diversion" type="range" min="0" max="100" step="5" value="20"><output id="diversion-output" for="diversion">20%</output></div><p>Assumption, not observed free capacity. Only origins with observed 2024 U.S. imports are included. Try 100% to test the conditional ceiling.</p></div>
+          <div class="control-block"><label for="premium">Illustrative import-cost premium</label><div class="range-row"><input id="premium" type="range" min="0" max="100" step="5" value="30"><output id="premium-output" for="premium">30%</output></div><p>Applied to the 2024 U.S. average import unit value. It is not a retail-price or market-clearing forecast.</p></div>
+          <button id="reset-scenario" type="button" class="reset">RESET ASSUMPTIONS ↺</button>
+        </div>
+        <div class="scenario-results" aria-live="polite">
+          <div class="result-top"><span>MODELED / ANNUAL</span><span id="result-state">BASELINE</span></div>
+          <div class="gap-number"><strong id="gap-value">—</strong><span>tonnes remain uncovered</span></div><p class="annual-caveat">Conditional import-equivalent gap under selected assumptions. This is not a forecast of U.S. shortage.</p>
+          <div class="supply-track" role="img" aria-label="Comparison of lost Mexican volume, illustrative redirected imports, and remaining gap"><div id="track-redirect" class="track-redirect"></div><div id="track-gap" class="track-gap"></div></div>
+          <div class="track-labels"><span id="redirect-label">— redirected</span><span id="lost-label">— lost</span></div>
+          <div class="ceiling-box"><span>EXTREME ANNUAL REPLACEMENT TEST · 100% DIVERSION</span><strong id="ceiling-gap">—</strong><p id="ceiling-copy">Conditional replacement gap within the current U.S. supplier set. Existing buyers would lose every redirected tonne.</p></div>
+          <div id="replacement-list" class="replacement-list"></div>
+          <div class="cost-box"><div><span>ILLUSTRATIVE EXTRA IMPORT BILL</span><strong id="cost-value">—</strong></div><p id="cost-explainer">For the redirected volume only; excludes price changes on existing imports and domestic supply.</p></div>
+        </div>
+      </div>
+      <div class="next-risk"><span>NEXT CONSTRAINT</span><p id="risk-text">The next bottleneck is not where avocados grow. It is how much existing export supply can be diverted, in season, through U.S.-accessible channels.</p></div>
+      <div class="entry-note"><strong>OBSERVED 2024 ENTRY PATTERN</strong><span>86% through the Laredo customs district · 6% Philadelphia · 5% Miami <a href="#sources">[4]</a></span><small>District shares describe recorded entry, not available spare capacity or exact shipment routes.</small></div>
+    </section>
+
+    <section id="risks" class="risks" aria-labelledby="risks-title"><div class="report-section-head"><div><p class="eyebrow">RISK REGISTER / EVIDENCE TO ACTION</p><h2 id="risks-title">Where the chain could fail.</h2></div><p>Risk signals are observed. The responses are analyst recommendations to validate with suppliers, buyers, and import authorities.</p></div><div class="risk-register">
+      <article><span>01 / ORIGIN &amp; ENTRY</span><h3>One supplier, one major entry corridor</h3><p>Mexico supplied 83.4% of 2025 import volume. In 2024, 86% of fresh avocado imports entered through the Laredo customs district. These are separate measures, both pointing to concentrated exposure. <a href="#sources">[2, 4]</a></p><div><b>Decision</b><p>Map alternate entry arrangements and test continuity plans with existing Mexican partners before a disruption.</p></div></article>
+      <article><span>02 / CALENDAR FIT</span><h3>Alternatives peak after winter exposure</h3><p>Mexico supplied 95.2% of U.S. imports in January–April 2024. Peru’s 2025 U.S. shipments peaked in June–August. A large annual export pool cannot automatically cover a winter shortfall. <a href="#sources">[2, 8]</a></p><div><b>Decision</b><p>Contract and test supply by month, size, and grade; measure the gap for the exact weeks that matter.</p></div></article>
+      <article><span>03 / COMPETING BUYERS</span><h3>Export volume is already allocated</h3><p>Peru and Colombia sell substantial volume outside the U.S.; USDA ERS reports that more than half of their fresh exports go to the EU. The 2024 FAOSTAT diversion pool is a stress-test ceiling, not free stock. <a href="#sources">[3, 8]</a></p><div><b>Decision</b><p>Verify contracts, packhouse throughput, and the economics of shifting fruit from existing customers.</p></div></article>
+      <article><span>04 / PRODUCT &amp; ACCESS</span><h3>“Avocado” is not one interchangeable SKU</h3><p>USDA reports that most non-Hass U.S. imports come from the Dominican Republic. APHIS requirements also depend on origin and product; Guatemala’s Hass pathway has specific pest-control conditions. <a href="#sources">[8, 9]</a></p><div><b>Decision</b><p>Check cultivar, size, ripeness program, phytosanitary status, and current ACIR conditions before qualifying an origin.</p></div></article>
+    </div></section>
+
+
+
+    <section class="story" id="story" aria-labelledby="story-title"><div class="story-head"><p class="eyebrow">FIVE-MINUTE BRIEFING</p><h2 id="story-title">Follow the shock through the chain.</h2></div><div class="story-stage"><span id="story-count">01 / 04</span><div><h3 id="story-headline">The world grows 11.2 million tonnes.</h3><p id="story-text">Production is widespread, but U.S. imports are concentrated in one origin.</p></div><div class="story-nav"><button id="story-prev" type="button" aria-label="Previous story step">←</button><button id="story-next" type="button" aria-label="Next story step">→</button><button id="story-replay" type="button">REPLAY</button></div></div></section>
+
+    <section id="methodology" class="methodology"><div><p class="eyebrow">METHOD &amp; LIMITS</p><h2>What these numbers can—and cannot—say.</h2></div><div class="method-copy"><p><strong>Observed:</strong> FAOSTAT annual production and bilateral exports; USDA ERS monthly U.S. fresh-avocado imports. All physical quantities are normalized to metric tonnes. USDA values are customs import values, not shelf prices.</p><p><strong>Short-horizon tabletop:</strong> February or July 2025 USDA ERS monthly import tonnes are converted to a weekly rate by dividing by days in the month and multiplying by seven. Lost Mexican flow is reduced by an assumed uplift on observed non-Mexican imports and a one-time buffer measured as days of normal Mexican flow. The selected month is repeated for the chosen weeks; alternatives and buffer are hypothetical, not available capacity or verified store inventory.</p><p><strong>Annual tail test:</strong> The separate Mexico-zero scenario holds 2024 U.S. import requirements fixed and reallocates a chosen fraction of other suppliers’ reported exports to non-U.S. markets. It assumes no first-year production growth, substitution, inventory drawdown, or logistics expansion.</p><p><strong>Important limit:</strong> FAOSTAT “Avocados” is not a variety-specific match to USDA’s fresh-avocado series. Export and import reporters differ in timing and coverage. Annual exports do not establish monthly availability, quality, route, contractual freedom, or U.S. approval. The premium control illustrates arithmetic; historical data here cannot identify a causal price response.</p><details><summary>Reconciliation and data quality <span>+</span></summary><p id="reconciliation">Loading reconciliation…</p></details></div></section>
+
+    <section id="sources" class="sources"><div><p class="eyebrow">SOURCE LEDGER</p><h2>Every major fact has a trail.</h2></div><ol><li><span>01 / PRODUCTION</span><a href="https://www.fao.org/faostat/en/#data/QCL" target="_blank" rel="noopener">FAOSTAT, Crops and livestock products ↗</a><p>Item 572, Avocados; element Production; 2024 and historical annual observations.</p></li><li><span>02 / U.S. IMPORTS</span><a href="https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/trade-and-prices-by-category-and-commodity" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Trade Data ↗</a><p>Fresh avocados, monthly country-of-origin volume and value, 2017–2025. Download updated September 15, 2026.</p></li><li><span>03 / GLOBAL TRADE</span><a href="https://www.fao.org/faostat/en/#data/TM" target="_blank" rel="noopener">FAOSTAT, Detailed trade matrix ↗</a><p>Item 572, reporter exports by partner, 2024. Bilateral trade relationships, not physical shipment routes.</p></li><li><span>04 / LOGISTICS CONTEXT</span><a href="https://esmis.nal.usda.gov/sites/default/release-files/h989r3203/2n49vz489/k643cx565/FTS-381.pdf" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Outlook, March 2025 ↗</a><p>Reports 2024 entry through Laredo, Philadelphia and Miami customs districts. Districts are not exact ports or shipment trajectories.</p></li><li><span>05 / U.S. AVAILABILITY</span><a href="https://ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Yearbook, Table H-1 ↗</a><p>Fresh avocado import share of U.S. domestic availability, calendar 2024; updated February 10, 2026. This is a USDA balance-sheet estimate.</p></li><li><span>06 / ADVERTISED RETAIL</span><a href="https://www.ams.usda.gov/mnreports/fvwretail.pdf" target="_blank" rel="noopener">USDA AMS, Weekly Grocery Store Specialty Crops ↗</a><p>National conventional Hass, each; September 25, 2026 report. Major grocery retailer promotions, not a checkout price.</p></li><li><span>07 / SCANNER RETAIL</span><a href="https://ers.usda.gov/data-products/fruit-and-vegetable-prices" target="_blank" rel="noopener">USDA ERS, Fruit and Vegetable Prices ↗</a><p>Fresh avocado average retail price per pound, 2023 Circana scanner-data estimate.</p></li><li><span>08 / 2026 MARKET OUTLOOK</span><a href="https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/113982/FTS-384.pdf" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Outlook, March 2026 ↗</a><p>2025 import record, origin mix, seasonality, California and competing export markets; report dated March 26, 2026.</p></li><li><span>09 / MARKET ACCESS</span><a href="https://www.aphis.usda.gov/news/program-update/update-import-requirements-guatemala-fresh-avocado-fruit" target="_blank" rel="noopener">USDA APHIS, Guatemala Hass import requirements ↗</a><p>April 2025 update to pest-control and operational-workplan requirements. Check current ACIR conditions before procurement.</p></li><li><span>10 / RETAIL FORMAT</span><a href="https://hassavocadoboard.com/wp-content/uploads/hab-research-insights-rethinking-retail-avocado-bagged.pdf" target="_blank" rel="noopener">Hass Avocado Board, Rethinking Retail: Bagged Avocados ↗</a><p>Circana multi-outlet retail sales, 2019–2022. Bagged share uses individual fruit units, including avocados sold inside bags; 2022 pack-size mix uses dollar sales. Historic format evidence, not a current-year estimate.</p></li><li><span>11 / 2022 DISRUPTION</span><a href="https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/105859/FTS-374.pdf" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Outlook, March 2022 ↗</a><p>Mexico crop outlook, January import change, shipping-point carton prices, and February 12–18 inspection suspension. Shipping-point prices are not retail checkout prices.</p></li><li><span>12 / RETAIL PRICE SERIES</span><a href="https://hassavocadoboard.com/wp-content/uploads/Total-U.S.-2024-Q4.pdf" target="_blank" rel="noopener">Hass Avocado Board, Total U.S. 2024 Q4 Retail Composite ↗</a><p>Circana multi-outlet annual avocado category average selling price per unit, 2022–2024; this is sales dollars divided by fruit units.</p></li><li><span>13 / SIZE-MIX CONTEXT</span><a href="https://hassavocadoboard.com/happenings/2024-year-in-review/" target="_blank" rel="noopener">Hass Avocado Board, 2024 Year in Review ↗</a><p>Industry account of 2024 smaller fruit mix and large-size retail unit declines. Contextual evidence, not an identified cause of retail price change.</p></li><li><span>14 / 2024 INSPECTION PAUSE</span><a href="https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/109636/FTS-379.pdf" target="_blank" rel="noopener">USDA ERS, Fruit and Tree Nuts Outlook, July 2024 ↗</a><p>Documents a brief June 2024 inspection suspension for avocado and mango shipments from Michoacán due to inspector safety concerns. It does not estimate the avocado retail-price effect.</p></li></ol><p class="credit">Boundaries: Natural Earth public-domain 1:110m countries. Data accessed September 26, 2026.</p></section>
+    </details>
+  </main>
+  <footer><span>GLOBAL SUPPLY CHAIN ATLAS / AVOCADO</span><span>OBSERVED DATA · EXPLICIT ASSUMPTIONS · OPEN METHODS</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <div id="tooltip" class="tooltip" role="status" hidden></div>
+</body>
+</html>

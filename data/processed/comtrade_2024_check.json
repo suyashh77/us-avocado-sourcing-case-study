@@ -1,0 +1,60 @@
+{
+  "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+  "scope": "US reporter imports, HS 080440 fresh or dried, 2024",
+  "rows": [
+    {
+      "partner": "World",
+      "m49": 0,
+      "netWeightKg": 1217217623.0,
+      "tonnes": 1217217.623,
+      "tradeValueUsd": 3876537120.0,
+      "hsClassification": "H6",
+      "isReported": false
+    },
+    {
+      "partner": "Mexico",
+      "m49": 484,
+      "netWeightKg": 1066358579.0,
+      "tonnes": 1066358.579,
+      "tradeValueUsd": 3494303194.0,
+      "hsClassification": "H6",
+      "isReported": true
+    },
+    {
+      "partner": "Peru",
+      "m49": 604,
+      "netWeightKg": 65893875.0,
+      "tonnes": 65893.875,
+      "tradeValueUsd": 191787344.0,
+      "hsClassification": "H6",
+      "isReported": true
+    },
+    {
+      "partner": "Colombia",
+      "m49": 170,
+      "netWeightKg": 36822772.0,
+      "tonnes": 36822.772,
+      "tradeValueUsd": 98514386.0,
+      "hsClassification": "H6",
+      "isReported": true
+    },
+    {
+      "partner": "Dominican Republic",
+      "m49": 214,
+      "netWeightKg": 42485721.0,
+      "tonnes": 42485.721,
+      "tradeValueUsd": 70288883.0,
+      "hsClassification": "H6",
+      "isReported": true
+    },
+    {
+      "partner": "Chile",
+      "m49": 152,
+      "netWeightKg": 5565570.0,
+      "tonnes": 5565.57,
+      "tradeValueUsd": 21326118.0,
+      "hsClassification": "H6",
+      "isReported": true
+    }
+  ]
+}
