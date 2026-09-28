@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101a1b">
-  <meta name="description" content="A retail sourcing case study on U.S. avocado supply: Mexico concentration, price and production shocks, alternative origins, and transparent short-horizon scenarios.">
-  <title>U.S. Avocado Sourcing Case Study | Supply Chain Atlas</title>
+  <meta name="description" content="Food Supply Shock Tower, case 01: an interactive U.S. avocado sourcing case study connecting grocery-price curiosity with import concentration, alternative origins, and transparent disruption scenarios.">
+  <title>Food Supply Shock Tower | Case 01: Avocados</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101a1b'/%3E%3Cellipse cx='32' cy='32' rx='19' ry='25' fill='%23a8cf65'/%3E%3Ccircle cx='32' cy='38' r='11' fill='%2357734e'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="Avocado Supply Chain Atlas home"><span class="brand-mark">A<span>•</span></span><span>AVOCADO<br>SOURCING CASE STUDY</span></a>
+    <a class="brand" href="#top" aria-label="Food Supply Shock Tower home"><span class="brand-mark">A<span>•</span></span><span>FOOD SUPPLY<br>SHOCK TOWER</span></a>
     <span class="edition">CASE NOTE 01 &nbsp;/&nbsp; SEPTEMBER 2026</span>
     <a class="toplink" href="#sources">SOURCES <span aria-hidden="true">↗</span></a>
   </header>
@@ -21,20 +21,21 @@
   <main id="top">
     <section class="opening command-opening case-opening" aria-labelledby="opening-title">
       <div class="opening-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> SOURCING CASE STUDY / U.S. FRESH AVOCADOS</p>
-        <h1 id="opening-title">What if Mexico's avocado flow stops?</h1>
-        <p class="deck">The sourcing decision: who can deliver the right fruit in the right week?</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> FOOD SUPPLY SHOCK TOWER / CASE 01: AVOCADOS</p>
+        <h1 id="opening-title">What if my avocado supply breaks?</h1>
+        <p class="deck">I've worked in sourcing. I'm also a college student tired of grocery price jumps. Avocados are my first food supply shock case: could a buyer cover a disruption before I need to switch?</p>
         <div class="command-metrics" aria-label="Case study indicators">
           <div><span>MEXICO SHARE OF IMPORTS · 2025</span><strong id="share-inline">—</strong><small>USDA ERS [2]</small></div>
           <div><span>WINTER / SPRING MEXICO SHARE · 2024</span><strong id="command-winter">—</strong><small>January–April U.S. imports · USDA ERS [2]</small></div>
           <div><span>ANNUAL REPLACEMENT GAP · 2024</span><strong id="opening-gap">—</strong><small>extreme assumption, not a shortage forecast [2, 3]</small></div>
         </div>
-        <div class="opening-actions"><button id="start-story" class="action primary" type="button">Read the decision <span aria-hidden="true">↘</span></button><a class="action text-action" href="#tabletop">Test a disruption <span aria-hidden="true">↗</span></a></div>
+        <div class="opening-actions"><button id="start-story" class="action primary" type="button">Read the case <span aria-hidden="true">↘</span></button><a class="action text-action" href="#tabletop">Test a disruption <span aria-hidden="true">↗</span></a></div>
+        <p class="tower-roadmap"><strong>NEXT · PLANNED</strong> Potatoes · chicken · broccoli · apples · blueberries · lettuce</p>
       </div>
     </section>
 
     <section id="brief" class="brief" aria-labelledby="brief-title">
-      <div class="brief-head"><p class="eyebrow">01 / DECISION</p><h2 id="brief-title">Keep Mexico. Qualify alternatives by week.</h2></div>
+      <div class="brief-head"><p class="eyebrow">01 / AVOCADO SOURCING DECISION</p><h2 id="brief-title">Keep Mexico. Qualify alternatives by week.</h2></div>
       <div class="brief-metrics"><div><span>2025 U.S. IMPORT VOLUME</span><strong id="brief-us-2025">—</strong><small>fresh avocados · USDA ERS [2]</small></div><div><span>MEXICO SHARE OF 2025 IMPORTS</span><strong id="brief-mx-2025">—</strong><small>by weight · USDA ERS [2]</small></div><div><span>2024 CURRENT-SUPPLIER CEILING GAP</span><strong id="brief-gap">—</strong><small>even at 100% diversion · conditional [2, 3]</small></div></div>
       <div class="lane-cards" aria-label="Observed supplier lanes and qualification status">
         <article><span>CORE LANE · OBSERVED</span><h3>Mexico</h3><strong id="lane-mexico">—</strong><p>2025 U.S. imports · protect continuity.</p><small>UNVERIFIED · Contingency volume</small></article>
@@ -48,7 +49,7 @@
     <section id="signals" class="case-signals" aria-labelledby="signals-title">
       <div class="report-section-head"><div><p class="eyebrow">02 / EVIDENCE</p><h2 id="signals-title">Follow the volume.</h2></div></div>
       <div class="trade-figures">
-        <article class="figure-card sankey-card"><span class="metric-label">FIG 01 · REPORTED EXPORT RELATIONSHIPS</span><h3>Alternative fruit already has buyers</h3><div class="sankey-wrap"><svg id="trade-sankey" viewBox="0 0 950 390" role="img" aria-label="Sankey diagram of Peru, Colombia, and Chile's 2024 reported avocado exports to the United States and other trade partners"></svg></div><div id="sankey-readout" class="sankey-readout" aria-live="polite">Select a ribbon to inspect reported tonnes.</div><p>2024 FAOSTAT reporter exports · partner relationships, not routes or free capacity. The Netherlands may re-export. <a href="#sources">[3]</a></p></article>
+        <article class="figure-card sankey-card"><span class="metric-label">FIG 01 · REPORTED EXPORT RELATIONSHIPS</span><h3>Alternative fruit already has buyers</h3><div class="sankey-wrap"><svg id="trade-sankey" viewBox="0 0 950 390" role="img" aria-label="Sankey diagram of Peru, Colombia, and Chile's 2024 reported avocado exports to the United States and other trade partners"></svg></div><div id="sankey-readout" class="sankey-readout" aria-live="polite">Select a ribbon to inspect reported tonnes.</div><p>2024 reporter exports, not routes or spare capacity. The Netherlands may re-export. <a href="#sources">[3]</a></p></article>
         <article class="figure-card pool-card"><span class="metric-label">FIG 02 · OBSERVED EXPORT POOL</span><h3>U.S. vs other buyers</h3><div id="lane-pool" class="lane-pool" role="img" aria-label="Reported 2024 exports by alternative origin to the U.S. and other buyers"></div><div class="pool-legend"><span><i class="pool-us"></i>U.S.</span><span><i class="pool-other"></i>Other buyers</span></div><p>Already traded, not spare capacity · FAOSTAT <a href="#sources">[3]</a></p></article>
       </div>
       <div class="signal-layout">
@@ -92,7 +93,7 @@
         <li><span>02 / QUALIFY</span><p><strong>Buy seasonal options.</strong> Trial Peru and Colombia by week, size, grade, and pack. <em>Observed timing · capacity unverified</em></p></li>
         <li><span>03 / TRIGGER</span><p><strong>Adjust promotions before stockouts.</strong> Tie decisions to confirmed receipts and DC inventory. <em>Analyst recommendation · retailer data needed</em></p></li>
       </ol>
-      <p class="actions-note">Execution needs retailer POS, contracts, inventory, shrink, and SKU costs.</p>
+      <p class="actions-note">Execution needs retailer POS, contracts, inventory, shrink, and SKU costs. A food-swap signal needs local prices and availability; it isn't calculated here.</p>
     </section>
     <details class="supplier-questions" id="supplier-checklist"><summary><span>SUPPLIER DILIGENCE</span><strong>Six questions before counting replacement supply</strong><em>OPEN ↗</em></summary><div><p class="eyebrow">BEFORE COUNTING REPLACEMENT SUPPLY</p><h2 id="supplier-questions-title">What I would ask a supplier tomorrow.</h2><p>Historic shipments prove a lane existed. These answers determine whether it can cover a specific retail order.</p></div><ol><li>Which weeks and firm tonnes can you commit beyond existing customer contracts?</li><li>Which Hass sizes, grades, ripeness specs, and bag or bulk packs can you supply?</li><li>What are packhouse throughput, cold-chain capacity, lead time, and route variance?</li><li>What U.S. phytosanitary requirements apply to this fruit and origin?</li><li>What is the delivered cost by SKU, including shrink and claims?</li><li>What happens to the commitment if inspection or freight is interrupted?</li></ol><p class="supplier-questions-note">STATUS · UNVERIFIED COMMERCIAL INPUTS. None is inferred from national production or bilateral exports.</p></details>
 

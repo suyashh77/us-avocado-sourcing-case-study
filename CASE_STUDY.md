@@ -1,11 +1,15 @@
-# Sourcing case study: U.S. avocado supply
+# Food Supply Shock Tower — Case 01: U.S. avocado supply
 
-**Role:** Retail produce sourcing analyst
+**Why I built it:** I've worked in sourcing, and I'm a college student who is tired of watching the price of daily groceries move without understanding the supply behind them. I want a food supply shock tower that eventually helps me decide when to keep buying a food and when to switch. Avocados are the first case because I can trace their U.S. import concentration, seasonal alternatives, and documented disruptions with public data.
+
+**Role in this case:** Retail produce sourcing analyst
 
 **Decision:** How should a U.S. retailer preserve avocado availability and manage price exposure when Mexican supply is disrupted?
 
 **Evidence snapshot:** September 26, 2026
 **Interactive analysis:** [U.S. Avocado Sourcing Case Study](https://suyashh77.github.io/us-avocado-sourcing-case-study/)
+
+**Series roadmap:** Potatoes, chicken, broccoli, apples, blueberries, and lettuce are planned. This avocado case does not yet monitor those foods or calculate a shopper substitution trigger.
 
 ## Executive decision
 

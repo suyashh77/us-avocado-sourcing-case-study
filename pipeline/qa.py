@@ -28,7 +28,8 @@ with sync_playwright() as p:
         assert "2024" in page.locator("#case-origin-mix").get_attribute("aria-label")
         page.locator("#figure-year").select_option("2025")
         assert page.locator("#case-gap").inner_text() == "10,669 t"
-        assert len(page.locator("main").inner_text().split()) <= 700
+        # At 250 words/minute, 750 visible words is a three-minute read.
+        assert len(page.locator("main").inner_text().split()) <= 750
         assert page.locator("#appendix").get_attribute("open") is None
         assert page.locator(".evidence-notes").get_attribute("open") is None
         assert "NOT A STORE SHORTAGE FORECAST" in page.locator(".result-caveat").inner_text()

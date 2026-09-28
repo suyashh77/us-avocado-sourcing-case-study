@@ -1,6 +1,8 @@
-# U.S. Avocado Sourcing Case Study
+# Food Supply Shock Tower — Case 01: Avocados
 
-An interactive, source-linked portfolio case study from the perspective of a retail produce sourcing analyst. It connects U.S. avocado import concentration, documented production and inspection shocks, retail and upstream price evidence, qualified alternative origins, and transparent short-horizon scenario tests. [Explore the interactive case study](https://suyashh77.github.io/us-avocado-sourcing-case-study/). It uses dated data snapshots, not a live shipment feed.
+I've worked in sourcing, and as a college student I keep noticing price changes in the foods I buy every week. I started a Food Supply Shock Tower to ask whether I can spot supply exposure early enough to make a better buying or substitution decision. Avocados are case 01: a tractable starting point with a concentrated U.S. import lane and measurable alternative origins. [Explore the interactive case study](https://suyashh77.github.io/us-avocado-sourcing-case-study/).
+
+This first case connects U.S. avocado import concentration, documented production and inspection shocks, retail and upstream price evidence, alternative origins, and transparent short-horizon scenario tests. It uses dated data snapshots, not a live shipment feed. **Potatoes, chicken, broccoli, apples, blueberries, and lettuce are planned future cases; they are not monitored here yet.** The current analysis does not recommend when a shopper should switch foods: that needs local shelf prices, availability, and substitute costs.
 
 The page is structured as a 2–3 minute visual case note: buyer decision with observed Mexico/Peru/Colombia lanes, six evidence figures including a Sankey of reported export relationships, an adjustable disruption scenario with sensitivity grid, and three sourcing actions. Event context, supplier questions, the map, global charts, supplier profiles, annual extreme test, methods, and source ledger open on demand. The figures are rendered from checked-in snapshots and update when those snapshots are rebuilt and redeployed.
 
