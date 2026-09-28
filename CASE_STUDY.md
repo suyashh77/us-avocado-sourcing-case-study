@@ -11,6 +11,8 @@
 
 **Series roadmap:** Potatoes, chicken, broccoli, apples, blueberries, and lettuce are planned. This avocado case does not yet monitor those foods or calculate a shopper substitution trigger.
 
+**Broader vision:** Build a repeatable view of the foods in my daily diet: watch dated shelf prices and availability, trace supply back to production and origin mix, identify credible shocks, and compare realistic substitutes before deciding when to switch. Each case should keep observed data, analyst inference, and scenario assumptions separate. The avocado analysis tests that approach from a sourcing perspective; cross-food monitoring and local grocery decisions are future work.
+
 ## Executive decision
 
 Keep Mexico as the core year-round lane while reducing single-origin failure risk. Prequalify Peru for the summer window and Colombia for a broader observed U.S. receipt pattern; contract for **weekly, SKU-specific** flex only after confirming fruit size, grade, APHIS access, packhouse and ripening capacity, freight, and incumbent customer commitments. Use a small, explicitly usable buffer for short interruptions. Set separate responses for a one-week inspection pause and an eight-week crop squeeze.

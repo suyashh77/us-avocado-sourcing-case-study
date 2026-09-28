@@ -4,6 +4,10 @@ I've worked in sourcing, and as a college student I keep noticing price changes 
 
 This first case connects U.S. avocado import concentration, documented production and inspection shocks, retail and upstream price evidence, alternative origins, and transparent short-horizon scenario tests. It uses dated data snapshots, not a live shipment feed. **Potatoes, chicken, broccoli, apples, blueberries, and lettuce are planned future cases; they are not monitored here yet.** The current analysis does not recommend when a shopper should switch foods: that needs local shelf prices, availability, and substitute costs.
 
+## Broader vision
+
+The goal is a personal supply risk view for the foods I eat each week. For each food, I want to join dated shelf prices and availability with production, origin concentration, seasonal supply, and verified disruption events. The tower should show what changed, where the exposure sits, and which conclusions come from observations versus assumptions. Eventually, a cross-food comparison could use local price, stock, and substitute cost to help me decide whether to buy as usual, wait, or switch. This is a product direction, not a claim that the current avocado case has live alerts or a grocery-swap recommendation.
+
 The page is structured as a 2–3 minute visual case note: buyer decision with observed Mexico/Peru/Colombia lanes, six evidence figures including a Sankey of reported export relationships, an adjustable disruption scenario with sensitivity grid, and three sourcing actions. Event context, supplier questions, the map, global charts, supplier profiles, annual extreme test, methods, and source ledger open on demand. The figures are rendered from checked-in snapshots and update when those snapshots are rebuilt and redeployed.
 
 Start with the [case study narrative](CASE_STUDY.md) and the [editorial critique](CONTENT_CRITIQUE.md). The interactive site includes the global map as context and preserves the annual Mexico-zero calculation as an extreme bound.
